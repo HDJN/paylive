@@ -23,7 +23,11 @@
           "Microsoft.Extensions.Logging.Console": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "1.0.1",
           "Microsoft.AspNetCore.StaticFiles": "1.0.0",
-          "Microsoft.AspNetCore.Authentication.Cookies": "1.0.0"
+          "Microsoft.AspNetCore.Authentication.Cookies": "1.0.0",
+          "paylive.core": "1.0.0",
+          "paylive.wxpay": "1.0.0",
+          "paylive.alipay": "1.0.0",
+          "paylive.webpay": "1.0.0"
         },
         "runtime": {
           "paylive.dll": {}
@@ -1233,6 +1237,71 @@
         },
         "compile": {
           "lib/netstandard1.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "paylive.alipay/1.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.0.1",
+          "Microsoft.AspNetCore.Diagnostics": "1.0.0",
+          "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
+          "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
+          "Microsoft.Extensions.Logging.Console": "1.0.0",
+          "paylive.core": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.1",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1"
+        },
+        "runtime": {
+          "paylive.alipay.dll": {}
+        },
+        "compile": {
+          "paylive.alipay.dll": {}
+        }
+      },
+      "paylive.core/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "runtime": {
+          "paylive.core.dll": {}
+        },
+        "compile": {
+          "paylive.core.dll": {}
+        }
+      },
+      "paylive.webpay/1.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.0.1",
+          "Microsoft.AspNetCore.Diagnostics": "1.0.0",
+          "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
+          "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
+          "Microsoft.Extensions.Logging.Console": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.1",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1",
+          "paylive.core": "1.0.0"
+        },
+        "runtime": {
+          "paylive.webpay.dll": {}
+        },
+        "compile": {
+          "paylive.webpay.dll": {}
+        }
+      },
+      "paylive.wxpay/1.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.0.1",
+          "Microsoft.AspNetCore.Diagnostics": "1.0.0",
+          "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
+          "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
+          "Microsoft.Extensions.Logging.Console": "1.0.0",
+          "paylive.core": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.1",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1"
+        },
+        "runtime": {
+          "paylive.wxpay.dll": {}
+        },
+        "compile": {
+          "paylive.wxpay.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -3240,6 +3309,26 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-TWZnuiJgPDAEEUfobD7njXvSVR2Toz+jvKWds6yL4oSztmKQfnWzucczjzA+6Dv1bktBdY71sZW1YN0X6m9chQ=="
+    },
+    "paylive.alipay/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "paylive.core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "paylive.webpay/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "paylive.wxpay/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Libuv/1.9.0": {
       "type": "package",

@@ -9,7 +9,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using paylive.alipay;
+using paylive.core;
 using paylive.Controllers;
+using paylive.webpay;
+using paylive.wxpay;
 
 namespace paylive
 {
@@ -22,6 +26,13 @@ namespace paylive
             services.AddMvc();
 
             services.AddAuthorization();
+
+            services.AddTransient(i => new List<Plug>()
+            {
+                new WxService(),
+                new AliService(),
+                new WpService()
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

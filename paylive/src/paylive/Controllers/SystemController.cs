@@ -17,8 +17,21 @@ namespace paylive.Controllers
     [Authorize(Roles = "Admin")]
     public class SystemController : Controller
     {
+        /// <summary>
+        /// 订单统计/用户统计
+        /// </summary>
+        /// <returns></returns>
         // GET: /<controller>/
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        /// <summary>
+        /// 支付方式配置
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult PayModel()
         {
             return View();
         }

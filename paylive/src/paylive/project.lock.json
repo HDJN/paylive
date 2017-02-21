@@ -2041,7 +2041,11 @@
           "lib/portable-net45+win8+wpa81/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/netstandard1.3/_._": {
+          "runtimes/unix/lib/netstandard1.3/System.IO.Compression.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.IO.Compression.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -2064,7 +2068,7 @@
           "ref/netstandard1.3/System.IO.Compression.ZipFile.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.3/_._": {}
+          "lib/netstandard1.3/System.IO.Compression.ZipFile.dll": {}
         }
       },
       "System.IO.FileSystem/4.0.1": {
@@ -3419,6 +3423,79 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "paylive.alipay/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.1",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1",
+          "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
+          "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
+          "Microsoft.Extensions.Logging.Console": "1.0.0",
+          "Microsoft.NETCore.App": "1.0.1",
+          "paylive.core": "1.0.0"
+        },
+        "compile": {
+          "netcoreapp1.0/paylive.alipay.dll": {}
+        },
+        "runtime": {
+          "netcoreapp1.0/paylive.alipay.dll": {}
+        }
+      },
+      "paylive.core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netstandard1.6/paylive.core.dll": {}
+        },
+        "runtime": {
+          "netstandard1.6/paylive.core.dll": {}
+        }
+      },
+      "paylive.webpay/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.1",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1",
+          "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
+          "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
+          "Microsoft.Extensions.Logging.Console": "1.0.0",
+          "Microsoft.NETCore.App": "1.0.1",
+          "paylive.core": "1.0.0"
+        },
+        "compile": {
+          "netcoreapp1.0/paylive.webpay.dll": {}
+        },
+        "runtime": {
+          "netcoreapp1.0/paylive.webpay.dll": {}
+        }
+      },
+      "paylive.wxpay/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.1",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1",
+          "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
+          "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
+          "Microsoft.Extensions.Logging.Console": "1.0.0",
+          "Microsoft.NETCore.App": "1.0.1",
+          "paylive.core": "1.0.0"
+        },
+        "compile": {
+          "netcoreapp1.0/paylive.wxpay.dll": {}
+        },
+        "runtime": {
+          "netcoreapp1.0/paylive.wxpay.dll": {}
         }
       }
     }
@@ -9197,6 +9274,26 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "paylive.alipay/1.0.0": {
+      "type": "project",
+      "path": "../paylive.alipay/project.json",
+      "msbuildProject": "../paylive.alipay/paylive.alipay.xproj"
+    },
+    "paylive.core/1.0.0": {
+      "type": "project",
+      "path": "../paylive.core/project.json",
+      "msbuildProject": "../paylive.core/paylive.core.xproj"
+    },
+    "paylive.webpay/1.0.0": {
+      "type": "project",
+      "path": "../paylive.webpay/project.json",
+      "msbuildProject": "../paylive.webpay/paylive.webpay.xproj"
+    },
+    "paylive.wxpay/1.0.0": {
+      "type": "project",
+      "path": "../paylive.wxpay/project.json",
+      "msbuildProject": "../paylive.wxpay/paylive.wxpay.xproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9208,7 +9305,11 @@
       "Microsoft.AspNetCore.Server.Kestrel >= 1.0.1",
       "Microsoft.AspNetCore.StaticFiles >= 1.0.0",
       "Microsoft.Extensions.Logging.Console >= 1.0.0",
-      "Microsoft.NETCore.App >= 1.0.1"
+      "Microsoft.NETCore.App >= 1.0.1",
+      "paylive.alipay >= 1.0.0-*",
+      "paylive.core >= 1.0.0-*",
+      "paylive.webpay >= 1.0.0-*",
+      "paylive.wxpay >= 1.0.0-*"
     ],
     ".NETCoreApp,Version=v1.0": []
   },
