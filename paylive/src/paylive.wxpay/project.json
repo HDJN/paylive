@@ -10,7 +10,10 @@
     "Microsoft.Extensions.Logging.Console": "1.0.0",
     "paylive.core": "1.0.0-*",
     "Microsoft.AspNetCore.Mvc.Core": "1.0.1",
-    "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1"
+    "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1",
+    "System.Xml.XmlDocument": "4.0.1",
+    "System.Xml.XmlSerializer": "4.0.11",
+    "Newtonsoft.Json": "9.0.1"
   },
 
   "tools": {
