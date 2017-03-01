@@ -7,8 +7,8 @@ namespace paylive.alipay
     {
         public AliService()
         {
-            Url = "/wx/index";
-            Ua = "alipay";
+            Url = "/ali/index";
+            Ua = "web";
             Descrpion = "alipay";
         }
 

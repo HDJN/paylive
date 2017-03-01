@@ -3,8 +3,7 @@
 
   "dependencies": {
     "NETStandard.Library": "1.6.0",
-    "System.Net.Requests": "4.3.0",
-    "System.Net.Security": "4.0.0"
+    "System.Security.Cryptography.Csp": "4.3.0"
   },
 
   "frameworks": {

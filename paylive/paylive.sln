@@ -18,8 +18,6 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "paylive.alipay", "src\payli
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "paylive.wxpay", "src\paylive.wxpay\paylive.wxpay.xproj", "{943D3019-B95B-4B12-964B-C5B65FB46539}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "paylive.webpay", "src\paylive.webpay\paylive.webpay.xproj", "{64310842-77DA-4083-AF52-2E2A3EC53401}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,10 +40,6 @@ Global
 		{943D3019-B95B-4B12-964B-C5B65FB46539}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{943D3019-B95B-4B12-964B-C5B65FB46539}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{943D3019-B95B-4B12-964B-C5B65FB46539}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64310842-77DA-4083-AF52-2E2A3EC53401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64310842-77DA-4083-AF52-2E2A3EC53401}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64310842-77DA-4083-AF52-2E2A3EC53401}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64310842-77DA-4083-AF52-2E2A3EC53401}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +49,5 @@ Global
 		{70397F1B-A14E-4FCC-BA02-9AE105656E6C} = {6411317E-F3C0-421F-9BB0-E8C24B8845E6}
 		{F7E28280-1DBC-49F8-803A-A4C27F20A264} = {6411317E-F3C0-421F-9BB0-E8C24B8845E6}
 		{943D3019-B95B-4B12-964B-C5B65FB46539} = {6411317E-F3C0-421F-9BB0-E8C24B8845E6}
-		{64310842-77DA-4083-AF52-2E2A3EC53401} = {6411317E-F3C0-421F-9BB0-E8C24B8845E6}
 	EndGlobalSection
 EndGlobal
